@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio showcasing the work of a photographer">
+  <title>Photography Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Photo Grid */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>San Francisco Lens</h1>
+    <p>Capturing moments on film</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <section id="about" style="text-align: center;">
+      <img src="/Users/alexbondoc/Desktop/Bend Oregon Film 08-24/00004679/4679_00A.jpg" alt="Profile Picture" style="width:450px; height:450px; object-fit: cover; margin-bottom:20px;">
+    <h2>About Me</h2>
+    <p>I'm Alex Bondoc, and I'm from San Francisco here's a little introduction about me. I picked up photography during 2020, and it's a hobby I truly enjoy. Everyone has different angle when they pick up a camera. Here's how I see the world/moments of time. I mostly shoot architecture, candid and almost forgot all my work is shot on a Canon AE-1. My favorite roll of film is Kodak Gold 200, this film gives the picture a retro look and it makes color pop out more. Outside of photography I do more outdoor stuff like mountain biking, hanging out with friends, capturing moments and meeting new people. I believe every photo tells a story, and it tells your story. Go out there and shoot.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="photo-grid">
+      <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/000066870010.jpg" alt="Photo 1"> 
+      <figcaption>Wheels and Wings. Windsor, California.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/000066870018 (1).jpg" alt="Photo 2"> 
+      <figcaption>Wheels and Wings. Windsor, California.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/4680_28A.JPG" alt="Photo 3">
+      <figcaption>Alamo Park. San Francisco, California.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/000093370028.jpg" alt="Photo 4"> 
+      <figcaption>Painted Ladies. San Francisco, California.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/000093370030.jpg" alt="Photo 5"> 
+      <figcaption>Western Addition Auto Garage. San Francisco, California.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/IMG_8086.jpg" alt="Photo 6"> 
+      <figcaption>Eiffel Tower. Paris, France.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/IMG_7407.jpg" alt="Photo 7">
+      <figcaption>Luxembourg Gardens. Paris, France.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/IMG_8093.jpg" alt="Photo 8">
+      <figcaption>City Hall. Paris, France.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/4680_16A.jpg" alt="Photo 9">
+      <figcaption>Tower Theatre. Bend, Oregon.</figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+      <img src="/Users/alexbondoc/Desktop/website portfolio/4679_28A.JPG" alt="Photo 10">
+      <figcaption>Old Mill District. Bend, Oregon.<figcaption>
+      <figcaption>Kodak Gold 200</figcaption>
+    </figure>
+    <figure>
+    </div>
+  </section>
+
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span id="close-modal" class="close">&times;</span>
+    <img id="enlarged-img" class="enlarged-img" src=""
+
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you would like to book a session or have any questions, feel free to reach out!</p>
+    <p>Email: <a href="mailto:alexandermbondoc@gmail.com">alexandermbondoc@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alex Bondoc Photography. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
